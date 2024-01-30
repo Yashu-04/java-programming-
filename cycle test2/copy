@@ -1,0 +1,14 @@
+import java.util.*;
+public class copy {
+    public static void main(String[] args) {
+        int[] sourceArray = {1, 2, 3, 4, 5};
+        int[] destinationArray = new int[sourceArray.length];
+        int i = 0;
+        for (int num : sourceArray) {
+            destinationArray[i++] = num;
+        }
+
+        System.out.println("Source Array: " + Arrays.toString(sourceArray));
+        System.out.println("Destination Array: " + Arrays.toString(destinationArray));
+    }
+}
