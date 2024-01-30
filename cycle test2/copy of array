@@ -1,0 +1,24 @@
+import java.util.*;
+public class copyarray {
+    public static void main(String[] args) {
+        int[] originalArray = {1, 2, 3, 4, 5};
+        int[] copiedArray = new int[originalArray.length];
+        int index = 0;
+        for (int element : originalArray) {
+            copiedArray[index++] = element;
+        }
+        System.out.println("Original Array: " + arrayToString(originalArray));
+        System.out.println("Copied Array: " + arrayToString(copiedArray));
+    }
+    private static String arrayToString(int[] array) {
+        StringBuilder result = new StringBuilder("[");
+        for (int i = 0; i < array.length; i++) {
+            result.append(array[i]);
+            if (i < array.length - 1) {
+                result.append(", ");
+            }
+        }
+        result.append("]");
+        return result.toString();
+    }
+}
