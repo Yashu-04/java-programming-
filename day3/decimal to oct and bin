@@ -1,0 +1,10 @@
+import java.util.*;
+public class dectobinandoct {
+    public static void main(String[] args){
+        int dec=15;
+        String Bin=Integer.toBinaryString(dec);
+        String Oct=Integer.toOctalString(dec);
+        System.out.println("Bin"+Bin);
+        System.out.println("Oct"+Oct);
+    }
+}
