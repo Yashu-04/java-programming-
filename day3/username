@@ -1,0 +1,13 @@
+import java.util.*;
+public class username {
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        String s1=input.nextLine();
+        String s2=input.nextLine();
+        if(s1==s2)
+            System.out.println("valid username");
+        else{
+            System.out.println("invalid username");
+        }
+    }
+}
